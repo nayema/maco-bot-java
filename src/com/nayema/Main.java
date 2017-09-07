@@ -3,13 +3,12 @@ package com.nayema;
 public class Main {
 
     public static void main(String[] args) {
-        ADICalculation adiValue = new ADICalculation("", "2.75", "40.0");
-        L4Calculation l4Calculator = new L4Calculation(adiValue);
+        ADICalculator adiCalculator = new ADICalculator(0, 2.75, 40.0);
+        double adi = adiCalculator.calculateADI();
 
-        l4Calculator.setTotalSharedSurfaceArea(1002.5);
+        L4Calculator l4Calculator = new L4Calculator(adi, 450, 125000);
 
-        System.out.println("ADI is: " + adiValue.adi);
-        l4Calculator.calculateL4();
-        System.out.println("L4 is: " + l4Calculator.l4);
+        System.out.println("ADI is: " + adi);
+        System.out.println("L4 is: " + l4Calculator.calculateL4());
     }
 }
