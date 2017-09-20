@@ -1,4 +1,4 @@
-package com.nayema;
+package com.nayema.calculation;
 
 public class L4Calculator {
     private double adi;

@@ -1,4 +1,4 @@
-package com.nayema;
+package com.nayema.calculation;
 
 public class ADICalculator {
     private double minOfADEOrPDE;
